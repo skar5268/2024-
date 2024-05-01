@@ -1,0 +1,17 @@
+@mixin lgscreen {
+ @media (max-width: 1280px) {
+   @content;
+ }
+}
+
+@mixin desktop {
+ @media (max-width: 1024px) {
+   @content;
+ }
+}
+
+@mixin smscreen {
+ @media (max-width: 636px) {
+   @content;
+ }
+} ;
