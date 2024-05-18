@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap')
+@import "./variable"
+@import "./mixin"
+
+body
+  font-family: 'Noto Sans ', 'Noto Sans TC', sans-serif
+
+.wrap
+  overflow: hidden
+
+.logo
+  background-image: url(../img/logo.svg)
+  background-size: contain
+  width: 90px
+  height: 40px
+  text-indent: 101%
+  overflow: hidden
+  white-space: nowrap
+
+.container-title
+  color: $primary
+  text-align: center
+  font-weight: bold
+  margin-bottom: 80px
+  font-size: 32px
+  line-height: 38.4px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  @include smscreen
+    font-size: 24px
+    line-height: 28.8px
+
+  &::before
+    width: 100px
+    height: 6px
+    content: ""
+    background-image: url(../../img/title-deco-left-lg.png)
+    margin-right: 16px
+
+  &::after
+    width: 100px
+    height: 6px
+    content: ""
+    background-image: url(../../img/title-deco-right-lg.png)
+    margin-left: 16px
+
+.d-none
+  display: none
+
+.d-desk-block
+  @include desktop
+    display: block
+  @include smscreen
+    display: none
+
+.d-sm-block
+  @include smscreen
+    display: block

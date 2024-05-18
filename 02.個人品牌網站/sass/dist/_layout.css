@@ -1,0 +1,99 @@
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 28px;
+  position: relative;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(50%);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  margin-right: 40px;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+.menu li a {
+  padding: 4px 8px;
+  line-height: 24px;
+  color: #000000;
+}
+.menu li a.active {
+  background-image: url(img/menu-active.png);
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+}
+
+.footer {
+  background-image: url(../../img/footer-bg-lg.png);
+  background-size: cover;
+}
+.footer .container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .footer .container {
+    padding: 80px 0;
+    flex-direction: column;
+  }
+  .footer .container .logo {
+    margin: 0 auto;
+  }
+  .footer .container .about > a {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+.footer .container .about a {
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+.footer .container .about p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.link-list li:first-child a {
+  background-color: #000;
+  color: #fff;
+}
+.link-list a {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 8px 24px;
+  border: 1px solid #C1C1C1;
+  color: #3B3B3B;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+.link-list a img {
+  margin-right: 8px;
+}
+
+.mail-link {
+  color: #919191;
+}

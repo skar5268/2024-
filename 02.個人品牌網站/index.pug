@@ -1,0 +1,174 @@
+doctype html
+html(lang="zh-TW")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Noel 個人網站
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+    link(rel="stylesheet" href="../../all.css")
+  body 
+    .wrap
+      .header
+        h1
+          a.logo(href="./index.html") Noel 
+        ul.menu
+          li
+            a.active(href="./index.html") 首頁
+          li
+            a(href="./pug/works.html") 作品集
+          li
+            a(href="") 服務項目
+          li
+            a(href="") 部落格
+          li
+            a(href="") 聯絡我
+
+      .banner-homepage
+        img.d-none.d-desk-block(src="../../img/banner.png" alt="")
+        img.d-none.d-sm-block(src="../../img/hero-sm.png" alt="")
+        .intro
+          h2 Hi！我是 Noel
+          p 具有 10 年經驗的
+            span.focus 資深 UI 設計師
+            | 兼
+            span.focus 前端工程師
+          p 技術雙修並行，熱衷於優化使用者的網頁體驗
+          p.job-text WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
+          ul.social-links
+            li
+              a(href="")
+                img(src="../img/instagram.png" alt="")
+            li
+              a(href="")
+                img(src="../img/facebook.png" alt="")
+            li
+              a(href="")
+                img(src="../img/youtube.png" alt="")
+      h2.container-title 作品介紹
+      ul.works
+        li
+          img(src="../img/homepage-work1.png" alt="")
+          .work-intro
+            h3 星際旅行訂票平台
+            p 悠遊宇宙的夢想，從這裡開始實現
+            ul.tags
+              li 網頁設計
+              li 響應式設計
+              li Bootstrap
+            a.intro-btn(href="") 完整介紹
+              span.material-icons arrow_forward
+        li
+          img.d-none.d-desk-block.d-sm-block(src="../img/homepage-work2-sm.png" alt="")
+          .work-intro
+            h3 理財APP
+            p 連動帳戶與行動支付，讓 AI 提供您最好的理財建議
+            ul.tags
+              li APP設計
+              li IOS
+              li Recat
+            a.intro-btn(href="") 完整介紹 
+              span.material-icons arrow_forward
+        li
+          img(src="../img/homepage-work3.png" alt="")
+          .work-intro
+            h3 醫美診所官網
+            p 永保青春的秘密，從粹究開始
+            ul.tags
+              li 網頁設計
+              li 響應式設計
+              li ＷordPress
+            a.intro-btn(href="") 完整介紹 
+              span.material-icons arrow_forward
+
+      .service-container
+        h2.container-title 服務項目
+        ul.service-items
+          li
+            img(src="../../img/service-item-visual.svg" alt="")
+            h4 平面設計
+          li
+            img(src="../../img/service-item-ui.svg" alt="")
+            h4 UI 設計
+          li
+            img(src="../../img/service-item-html&css.svg" alt="")
+            h4 切版服務
+          li
+            img(src="../../img/service-item-front-end.svg" alt="")
+            h4 前端開發
+        h3.more  想要合作或瞭解更多？
+        a.btn(href="") 詳細內容與合作流程 
+          span.material-icons arrow_forward
+
+      .swiper-container
+        h2.container-title 精選文章
+        .swiper
+          swiper-container.swiper-cards(slides-per-view="3" space-between="24" pagination="true")
+            swiper-slide.swiper-card
+              a(href="") 
+                img(src="../../img/article-image1.png" alt="")
+                h3 Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+                .content 
+                  span.tag UI/UX 新知
+                  span.date 2024/02/10
+            swiper-slide.swiper-card 
+              a(href="") 
+                img(src="../../img/article-image2.png" alt="")
+                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+                .content 
+                  span.tag UI/UX 新知
+                  span.date 2023/11/20
+            swiper-slide.swiper-card 
+              a(href="") 
+                img(src="../../img/article-image3.png" alt="")
+                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+                .content 
+                  span.tag UI/UX 新知
+                  span.date 2023/10/18
+            swiper-slide.swiper-card
+              a(href="") 
+                img(src="../../img/article-image1.png" alt="")
+                h3 Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+                .content 
+                  span.tag UI/UX 新知
+                  span.date 2024/02/10
+            swiper-slide.swiper-card 
+              a(href="") 
+                img(src="../../img/article-image2.png" alt="")
+                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+                .content 
+                  span.tag UI/UX 新知
+                  span.date 2023/11/20
+            swiper-slide.swiper-card 
+              a(href="") 
+                img(src="../../img/article-image3.png" alt="")
+                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+                .content 
+                  span.tag UI/UX 新知
+                  span.date 2023/10/18
+      .footer
+        .container
+          .about 
+            a.logo(href="")
+            p 若有數位產品設計和開發相關問題
+              br
+              | 歡迎填寫表單，或直接與我聯絡！ 
+            a.mail-link(href="mailto:service@hexschool.com") service@hexschool.com 
+          ul.link-list 
+            li
+              a(href="") 
+                img(src="../../img/list.svg" alt="")
+                |填寫表單
+            li
+              a(href="") 
+                img(src="../../img/instagram.png" alt="")
+                |hexschool_demo
+            li
+              a(href="") 
+                img(src="../../img/facebook.png" alt="")
+                |hexschoolTW
+
+
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js") 
+
+    script(src="../../all.js") 
