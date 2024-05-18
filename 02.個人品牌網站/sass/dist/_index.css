@@ -1,5 +1,5 @@
 .banner-homepage {
-  background: right/contain no-repeat url(../../img/banner.png);
+  background: right/contain no-repeat url(./img/banner.png);
   margin-bottom: 120px;
   padding: 248px 0;
 }
@@ -72,7 +72,7 @@
   z-index: 0;
 }
 .works > li:first-child {
-  background-image: url(../../img/homepage-work1-bg.png);
+  background-image: url(./img/homepage-work1-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:first-child {
@@ -111,7 +111,7 @@
   }
 }
 .works > li:nth-child(2) {
-  background-image: url(../../img/homepage-work2-bg.png);
+  background-image: url(./img/homepage-work2-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:nth-child(2) {
@@ -158,7 +158,7 @@
   }
 }
 .works > li:nth-child(3) {
-  background-image: url(../../img/homepage-work3-bg.png);
+  background-image: url(./img/homepage-work3-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:nth-child(3) {
@@ -256,7 +256,7 @@
 }
 
 .service-container {
-  background-image: url(../../img/homepage-services-bg.png);
+  background-image: url(./img/homepage-services-bg.png);
   padding: 120px 0;
 }
 
@@ -280,7 +280,7 @@
 }
 .service-items li {
   text-align: center;
-  background-image: url(../../img/service-item-bg.png);
+  background-image: url(./img/service-item-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 97px;

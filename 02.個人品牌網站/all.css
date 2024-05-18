@@ -253,14 +253,14 @@ h1 {
   color: #000000;
 }
 .menu li a.active {
-  background-image: url(img/menu-active.png);
+  background-image: url(./img/menu-active.png);
   background-size: cover;
   background-position: center;
   font-weight: bold;
 }
 
 .footer {
-  background-image: url(../../img/footer-bg-lg.png);
+  background-image: url(./img/footer-bg-lg.png);
   background-size: cover;
 }
 .footer .container {
@@ -318,7 +318,7 @@ h1 {
 }
 
 .banner-homepage {
-  background: right/contain no-repeat url(../../img/banner.png);
+  background: right/contain no-repeat url(./img/banner.png);
   margin-bottom: 120px;
   padding: 248px 0;
 }
@@ -391,7 +391,7 @@ h1 {
   z-index: 0;
 }
 .works > li:first-child {
-  background-image: url(../../img/homepage-work1-bg.png);
+  background-image: url(./img/homepage-work1-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:first-child {
@@ -430,7 +430,7 @@ h1 {
   }
 }
 .works > li:nth-child(2) {
-  background-image: url(../../img/homepage-work2-bg.png);
+  background-image: url(./img/homepage-work2-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:nth-child(2) {
@@ -477,7 +477,7 @@ h1 {
   }
 }
 .works > li:nth-child(3) {
-  background-image: url(../../img/homepage-work3-bg.png);
+  background-image: url(./img/homepage-work3-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:nth-child(3) {
@@ -576,7 +576,7 @@ h1 {
 }
 
 .service-container {
-  background-image: url(../../img/homepage-services-bg.png);
+  background-image: url(./img/homepage-services-bg.png);
   padding: 120px 0;
 }
 
@@ -600,7 +600,7 @@ h1 {
 }
 .service-items li {
   text-align: center;
-  background-image: url(../../img/service-item-bg.png);
+  background-image: url(./img/service-item-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 97px;
