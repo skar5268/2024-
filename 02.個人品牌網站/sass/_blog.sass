@@ -13,7 +13,7 @@
   .sub-title
   text-align: center
   line-height: 24px
-  color: #919191
+  color: $gray
 
 .blog-container
   display: flex
@@ -42,7 +42,7 @@
   img
     max-width: 306px
     border-radius: 8px
-    border: 1px solid #F1F1F1
+    border: 1px solid $light-white
     margin-right: 16px
     @include pad
       margin: 0 auto
@@ -55,29 +55,29 @@
 
   .date
     line-height: 24px
-    color: #5b5b5b
+    color: $secondary
     font-weight: bold
     margin-right: 16px
 
   .tag
     padding: 4px 12px
     border-radius: 16px
-    background-color: #f1f1f1
-    color: #3b3b3b
+    background-color: $light-white
+    color: $primary
 
   h3>a
     font-size: 20px
     line-height: 24px
     font-weight: bold
-    color: #3b3b3b
+    color: $primary
     margin-bottom: 16px
 
     &:hover
-      color: #5b5b5b
+      color: $secondary
 
   p
     line-height: 24px
-    color: #3B3B3B
+    color: $primary
 
 .article-types
   width: 25%
@@ -106,8 +106,8 @@
     margin-bottom: 32px
 
     &:hover
-      color: #5b5b5b
-      border-bottom: 2px solid #5b5b5b
+      color: $secondary
+      border-bottom: 2px solid $secondary
 
     @include desktop
       margin-bottom: 0
@@ -120,7 +120,7 @@
     display: inline-block
     font-size: 20px
     line-height: 30px
-    color: #5b5b5b
+    color: $secondary
     margin-bottom: 32px
     padding-bottom: 4px
     border-bottom: 2px solid rgba(0,0 ,0 ,0)
