@@ -3,10 +3,6 @@ body {
   font-family: "Noto Sans ", "Noto Sans TC", sans-serif;
 }
 
-.wrap {
-  overflow: hidden;
-}
-
 .logo {
   background-image: url(./img/logo.svg);
   background-size: contain;
@@ -15,6 +11,11 @@ body {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
 }
 
 .container-title {
@@ -67,5 +68,11 @@ body {
 @media (max-width: 375px) {
   .d-sm-block {
     display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .d-sm-none {
+    display: none;
   }
 }

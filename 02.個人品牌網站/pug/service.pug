@@ -1,0 +1,181 @@
+doctype html
+html(lang="zh-TW")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Noel 個人網站
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(rel="stylesheet" href="../../all.css")
+  body 
+    .wrap
+      .header.container
+        h1
+          a.logo(href="../index.html") Noel 
+        .mobile-menu.material-icons menu
+        ul.menu
+          li
+            a.menu-link(href="../index.html") 
+              span 首頁
+          li
+            a.menu-link(href="./works.html")
+              span 作品集
+          li
+            a.menu-link.active(href="./service.html") 
+              span 服務項目
+          li
+            a.menu-link(href="./blog.html") 
+              span 部落格
+          li
+            a.menu-link(href="") 
+              span 聯絡我
+      .service-container.servicepage
+        h2.container-title 服務項目
+        ul.service-items
+          li
+            img(src="../../img/service-item-visual.svg" alt="平面設計")
+            h4 平面設計
+          li
+            img(src="../../img/service-item-ui.svg" alt="UI 設計")
+            h4 UI 設計
+          li
+            img(src="../../img/service-item-html&css.svg" alt="切版服務")
+            h4 切版服務
+          li
+            img(src="../../img/service-item-front-end.svg" alt="前端開發")
+            h4 前端開發
+      .bg-dark 
+        h2.container-title 服務流程
+        ul.service-list
+          li
+            .order-num 1
+            .content
+              h3 初步接洽
+              p 透過表單或其他社群軟體與我聯絡
+                br 
+                | 根據難易度與複雜度，後續可能需要電話 / 線上討論
+          li
+            .order-num 2
+            .content
+              h3 需求釐清
+              p 透過訪談與問卷，解析客戶需求，並針對痛點給予實際建議
+          li
+            .order-num 3
+            .content
+              h3 委託簽約
+              p 合約雙方用印後，即正式開始合作
+                br
+                | 可提供發票或勞務報酬單，須支付 20% 訂金
+          li
+            .order-num 4
+            .content
+              h3 版本呈現
+              p 根據合約內容進行設計或開發
+          li
+            .order-num 5
+            .content
+              h3 來回修正
+              p 依據合約規定之修正次數進行，次數計算以 mail 為準
+          li
+            .order-num 6
+            .content
+              h3 終版確認
+              p 雙方同意後即為最終版
+          li
+            .order-num 7
+            .content
+              h3 結案
+              p 客戶簽署驗收單，並於約定日期支付尾款
+      .container.price-container
+        h2.container-title 價格表
+        ul.price-list
+          li
+            img(src="../../img/service-item-visual.svg" alt="")
+            h3 平面設計
+            p 6,000
+              span 起 
+          li
+            img(src="../../img/service-item-ui.svg" alt="")
+            h3 UI 設計
+            p 15,000
+              span 起
+          li
+            img(src="../../img/service-item-front-end.svg" alt="")
+            h3 前端開發
+            p 22,000
+              span 起
+      .container.example-container
+        h2.container-title 客戶案例
+        ul.cards.container
+          li.card
+            img(src="../../img/04-美美美早餐店 POS 機 UI Design.png" alt="美美美早餐店 POS 機 UI Design")
+            .card-bottom
+              h2 美美美早餐店 POS 機 UI Design
+              h3 訂單送單一目瞭然，自動報表分析好輕鬆
+              ul.tags
+                li UI 設計
+                li 前端開發
+                li Wix
+          li.card
+            img(src="../../img/06-巧克巧克形象官網設計.png" alt="巧克巧克形象官網設計")
+            .card-bottom
+              h2 巧克巧克形象官網設計
+              h3 三步驟完成訂票，電腦手機都支援
+              ul.tags
+                li UI設計
+                li 設計系統
+                li 網路電商
+          li.card
+            img(src="../../img/05-電影院訂票系統.png" alt="電影院訂票系統")
+            .card-bottom
+              h2 電影院訂票系統
+              h3 三步驟完成訂票，電腦手機都支援
+              ul.tags
+                li 前端開發
+                li 後端支援
+                li Vue
+          li.card
+            img(src="../../img/07-2023 餉茶坊飲料旗艦店活動官網設計.png" alt="07-2023 餉茶坊飲料旗艦店活動官網設計")
+            .card-bottom
+              h2 2023 餉茶坊飲料旗艦店活動官網設計
+              h3 主打水果主題，冰鎮夏天暑氣
+              ul.tags
+                li 網頁設計
+                li 切版服務
+                li Javascript
+      .container.question-container
+        h2.container-title 常見問題
+        ul.question-list
+          li
+            h3 時程很趕的話可以加快作業嗎？
+            p 每提早一天，只要支付總報價的 5%，我們即會視為急件為您趕工！
+          li
+            h3 白天可以開會討論嗎？
+            p 每週一三五的白天，可以約定開會時間！
+          li
+            h3 有實際開發的網站可以參考嗎？
+            p 請填寫表單或來信索取，部分合作有簽保密協定，無法於網路上公開喔。
+          li
+            h3 提供比稿服務嗎？
+            p 只要支付費用，設計提供比稿服務，但切版與前端開發恕不提供該服務內容。
+      .footer
+        .container
+          .about 
+            a.logo(href="../index.html")
+            p 若有數位產品設計和開發相關問題
+              br
+              | 歡迎填寫表單，或直接與我聯絡！ 
+            a.mail-link(href="mailto:service@hexschool.com") service@hexschool.com 
+          ul.link-list 
+            li
+              a(href="#") 
+                img(src="../../img/list.svg" alt="表單")
+                |填寫表單
+            li
+              a(href="#") 
+                img(src="../../img/instagram.png" alt="IG")
+                |hexschool_demo
+            li
+              a(href="#") 
+                img(src="../../img/facebook.png" alt="FB")
+                |hexschoolTW
+      script(src="../../all.js") 

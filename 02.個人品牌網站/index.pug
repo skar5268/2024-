@@ -5,28 +5,33 @@ html(lang="zh-TW")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Noel 個人網站
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
     link(rel="stylesheet" href="../all.css")
   body 
     .wrap
-      .header
+      .header.container
         h1
           a.logo(href="./index.html") Noel 
+        .mobile-menu.material-icons menu
         ul.menu
           li
-            a.active(href="./index.html") 首頁
+            a.menu-link.active(href="./index.html") 
+              span 首頁
           li
-            a(href="./pug/works.html") 作品集
+            a.menu-link(href="./pug/works.html")
+              span 作品集
           li
-            a(href="") 服務項目
+            a.menu-link(href="./pug/service.html") 
+              span 服務項目
           li
-            a(href="") 部落格
+            a.menu-link(href="./pug/blog.html") 
+              span 部落格
           li
-            a(href="") 聯絡我
+            a.menu-link(href="") 
+              span 聯絡我
 
       .banner-homepage
-        img.d-none.d-desk-block(src="../img/banner.png" alt="")
-        img.d-none.d-sm-block(src="../img/hero-sm.png" alt="")
+        img.d-none.d-desk-block(src="../img/banner.png" alt="banner")
+        img.d-none.d-sm-block(src="../img/hero-sm.png" alt="banner")
         .intro
           h2 Hi！我是 Noel
           p 具有 10 年經驗的
@@ -37,18 +42,18 @@ html(lang="zh-TW")
           p.job-text WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
           ul.social-links
             li
-              a(href="")
-                img(src="../img/instagram.png" alt="")
+              a(href="https://www.instagram.com/")
+                img(src="../img/instagram.png" alt="Instagram")
             li
-              a(href="")
-                img(src="../img/facebook.png" alt="")
+              a(href="https://www.facebook.com/")
+                img(src="../img/facebook.png" alt="Facebook")
             li
-              a(href="")
-                img(src="../img/youtube.png" alt="")
+              a(href="https://www.youtube.com/")
+                img(src="../img/youtube.png" alt="Youtube")
       h2.container-title 作品介紹
       ul.works
         li
-          img(src="../img/homepage-work1.png" alt="")
+          img(src="../img/homepage-work1.png" alt="星際旅行訂票平台")
           .work-intro
             h3 星際旅行訂票平台
             p 悠遊宇宙的夢想，從這裡開始實現
@@ -59,7 +64,7 @@ html(lang="zh-TW")
             a.intro-btn(href="") 完整介紹
               span.material-icons arrow_forward
         li
-          img.d-none.d-desk-block.d-sm-block(src="../img/homepage-work2-sm.png" alt="")
+          img.d-none.d-desk-block.d-sm-block(src="../img/homepage-work2-sm.png" alt="理財APP")
           .work-intro
             h3 理財APP
             p 連動帳戶與行動支付，讓 AI 提供您最好的理財建議
@@ -70,7 +75,7 @@ html(lang="zh-TW")
             a.intro-btn(href="") 完整介紹 
               span.material-icons arrow_forward
         li
-          img(src="../img/homepage-work3.png" alt="")
+          img(src="../img/homepage-work3.png" alt="醫美診所官網")
           .work-intro
             h3 醫美診所官網
             p 永保青春的秘密，從粹究開始
@@ -85,71 +90,79 @@ html(lang="zh-TW")
         h2.container-title 服務項目
         ul.service-items
           li
-            img(src="../img/service-item-visual.svg" alt="")
+            img(src="../img/service-item-visual.svg" alt="平面設計")
             h4 平面設計
           li
-            img(src="../img/service-item-ui.svg" alt="")
+            img(src="../img/service-item-ui.svg" alt="UI 設計")
             h4 UI 設計
           li
-            img(src="../img/service-item-html&css.svg" alt="")
+            img(src="../img/service-item-html&css.svg" alt="切版服務")
             h4 切版服務
           li
-            img(src="../img/service-item-front-end.svg" alt="")
+            img(src="../img/service-item-front-end.svg" alt="前端開發")
             h4 前端開發
         h3.more  想要合作或瞭解更多？
         a.btn(href="") 詳細內容與合作流程 
           span.material-icons arrow_forward
 
-      .swiper-container
+      
+      .carousel
         h2.container-title 精選文章
-        .swiper
-          swiper-container.swiper-cards(slides-per-view="3" space-between="24" pagination="true")
-            swiper-slide.swiper-card
-              a(href="") 
-                img(src="../img/article-image1.png" alt="")
-                h3 Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-                .content 
-                  span.tag UI/UX 新知
-                  span.date 2024/02/10
-            swiper-slide.swiper-card 
-              a(href="") 
-                img(src="../img/article-image2.png" alt="")
-                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
-                .content 
-                  span.tag UI/UX 新知
-                  span.date 2023/11/20
-            swiper-slide.swiper-card 
-              a(href="") 
-                img(src="../img/article-image3.png" alt="")
-                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
-                .content 
-                  span.tag UI/UX 新知
-                  span.date 2023/10/18
-            swiper-slide.swiper-card
-              a(href="") 
-                img(src="../img/article-image1.png" alt="")
-                h3 Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
-                .content 
-                  span.tag UI/UX 新知
-                  span.date 2024/02/10
-            swiper-slide.swiper-card 
-              a(href="") 
-                img(src="../img/article-image2.png" alt="")
-                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
-                .content 
-                  span.tag UI/UX 新知
-                  span.date 2023/11/20
-            swiper-slide.swiper-card 
-              a(href="") 
-                img(src="../img/article-image3.png" alt="")
-                h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
-                .content 
-                  span.tag UI/UX 新知
-                  span.date 2023/10/18
+        .carousel-cards
+          .carousel-card 
+            a(href="") 
+              img(src="../img/article-image1.png" alt="Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)")
+              h3 Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+              .content 
+                span.tag UI/UX 新知
+                span.date 2024/02/10
+          .carousel-card 
+            a(href="") 
+              img(src="../img/article-image2.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)")
+              h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+              .content 
+                span.tag UI/UX 新知
+                span.date 2023/11/20
+          .carousel-card 
+            a(href="") 
+              img(src="../img/article-image3.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)")
+              h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+              .content 
+                span.tag UI/UX 新知
+                span.date 2023/10/18
+          .carousel-card.d-sm-none  
+            a(href="") 
+              img(src="../img/article-image1.png" alt="Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)")
+              h3 Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+              .content 
+                span.tag UI/UX 新知
+                span.date 2024/02/10
+          .carousel-card.d-sm-none  
+            a(href="") 
+              img(src="../img/article-image2.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)")
+              h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+              .content 
+                span.tag UI/UX 新知
+                span.date 2023/11/20
+          .carousel-card.d-sm-none 
+            a(href="") 
+              img(src="../img/article-image3.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)")
+              h3 給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+              .content 
+                span.tag UI/UX 新知
+                span.date 2023/10/18
+        .carousel-dots
+          .dot 
+          .dot 
+          .dot 
+          .dot 
+          .dot 
+        a.btn.more-articles(href="") 更多文章
+          span.material-icons arrow_forward
       .footer
         .container
           .about 
-            a.logo(href="")
+            a.logo(href="./index.html")
             p 若有數位產品設計和開發相關問題
               br
               | 歡迎填寫表單，或直接與我聯絡！ 
@@ -157,17 +170,16 @@ html(lang="zh-TW")
           ul.link-list 
             li
               a(href="") 
-                img(src="../img/list.svg" alt="")
+                img(src="../img/list.svg" alt="表單")
                 |填寫表單
             li
               a(href="") 
-                img(src="../img/instagram.png" alt="")
+                img(src="../img/instagram.png" alt="IG")
                 |hexschool_demo
             li
               a(href="") 
-                img(src="../img/facebook.png" alt="")
+                img(src="../img/facebook.png" alt="FB")
                 |hexschoolTW
 
 
-    script(type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js") 
     script(src="../all.js") 

@@ -141,8 +141,7 @@ a {
 
 img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: auto;
   max-width: 100%;
 }
@@ -601,8 +600,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   color: #FFFFFF;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   margin: 200px 0;
 }
 @media (max-width: 1280px) {
@@ -1278,7 +1276,7 @@ h1 {
 }
 .price-list li {
   background: #FAFAFA;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0px 4px 8px 0px #00000014;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1551,85 +1549,6 @@ h1 {
   border-bottom: 2px solid #1E1E1E;
 }
 
-.blog-container.article {
+.blog-container {
   padding: 120px 0;
-  color: #3B3B3B;
-  border-bottom: 1px solid #c1c1c1;
 }
-@media (max-width: 992px) {
-  .blog-container.article {
-    padding-top: 0;
-  }
-}
-.blog-container.article .details {
-  line-height: 24px;
-  color: #919191;
-  margin-bottom: 40px;
-}
-.blog-container.article p {
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 40px;
-}
-.blog-container.article h4 {
-  font-size: 24px;
-  line-height: 28.8px;
-  margin-bottom: 16px;
-  font-weight: bold;
-}
-.blog-container.article .notes {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.articel-title {
-  font-size: 32px;
-  line-height: 38.4px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.sub-title {
-  font-size: 24px;
-  line-height: 28.8px;
-  text-align: center;
-  margin-bottom: 64px;
-}
-
-.article-single {
-  width: 70%;
-}
-@media (max-width: 992px) {
-  .article-single {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-.img-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-.img-group li {
-  margin-bottom: 24px;
-}
-.img-group img {
-  margin-bottom: 8px;
-}
-.img-group span {
-  display: block;
-  text-align: center;
-  line-height: 24px;
-  color: #5b5b5b;
-}
-
-.related-title {
-  font-size: 28px;
-  line-height: 33.6px;
-  color: #3B3B3B;
-  margin-bottom: 40px;
-  font-weight: bold;
-}/*# sourceMappingURL=all.css.map */

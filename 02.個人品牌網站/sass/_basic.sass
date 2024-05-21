@@ -5,9 +5,6 @@
 body
   font-family: 'Noto Sans ', 'Noto Sans TC', sans-serif
 
-.wrap
-  overflow: hidden
-
 .logo
   background-image: url(./img/logo.svg)
   background-size: contain
@@ -16,6 +13,10 @@ body
   text-indent: 101%
   overflow: hidden
   white-space: nowrap
+
+.container
+  max-width: 1296px
+  margin: 0 auto
 
 .container-title
   color: $primary
@@ -58,3 +59,7 @@ body
 .d-sm-block
   @include smscreen
     display: block
+
+.d-sm-none
+  @include smscreen
+    display: none

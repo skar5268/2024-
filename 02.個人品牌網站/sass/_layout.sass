@@ -6,11 +6,17 @@
    margin: 0 auto
 
 .header
-   max-width: 1296px
-   margin: 0 auto
    padding: 28px
    position: relative
-   border-bottom: 1px solid #F1F1F1
+   border-bottom: 1px solid $light-white
+
+   @include desktop
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+   @include pad
+      padding: 12px
 
 h1
    position: absolute
@@ -18,9 +24,27 @@ h1
    left: 0
    transform: translateY(50%)
 
+   @include desktop
+      position: relative
+      left: 0
+      transform: translateY(0%)
+
 .menu
    display: flex
    justify-content: center
+
+   @include pad
+      flex-direction: column
+      position: absolute
+      top: 65px
+      left: 0
+      background-color: $white
+      width: 100%
+      transition: all .5s
+      display: none
+
+      &.d-block
+         display: block
 
    li
       margin-right: 40px
@@ -28,24 +52,64 @@ h1
       &:last-child
          margin-right: 0
 
-      a
-         padding: 4px 8px
-         line-height: 24px
-         color: $black
+      @include pad
+         margin-right: 0
 
-         &.active
-            background-image: url(./img/menu-active.png)
-            background-size: cover
-            background-position: center
-            font-weight: bold
+.menu-link
+   padding: 4px 8px
+   line-height: 24px
+   color: $black
+
+   span
+      padding: 4px 8px
+      line-height: 24px
+      color: $black
+
+   &.active, &:hover
+      span
+         font-weight: bold
+         position: relative
+
+         &::before, &::after
+            position: absolute
+            content: ''
+            width: 8px
+            height: 8px
+            top: 0
+
+         &::before
+            left: 0
+            border-top: 1px solid $gray
+            border-left: 1px solid $gray
+            -webkit-box-reflect: below 16px
+
+         &::after
+            right: 0
+            border-top: 1px solid $gray
+            border-right: 1px solid $gray
+            -webkit-box-reflect: below 16px
+   &.active:hover
+      span
+         &::before, &::after
+            border: none
+
+   @include pad
+      padding: 24px
+      text-align: center
+
+.mobile-menu.material-icons
+   font-size: 32px
+   color: $black
+   display: none
+
+   @include pad
+      display: block
 
 .footer
    background-image: url(./img/footer-bg-lg.png)
    background-size: cover
 
    .container
-      max-width: 1296px
-      margin: 0 auto
       padding: 80px
       display: flex
       justify-content: space-between
@@ -73,21 +137,27 @@ h1
 .link-list
    li:first-child
       a
-         background-color: #000
-         color: #fff
+         background-color: $black
+         color: $white
 
    a
       font-size: 20px
       line-height: 30px
       padding: 8px 24px
-      border: 1px solid#C1C1C1
-      color: #3B3B3B
+      border: 1px solid $light
+      color: $primary
       border-radius: 8px
       margin-bottom: 24px
       display: flex
       align-items: center
+      transition: all .5s
+      &:hover
+         background-color: $black
+         color: $white
 
       img
          margin-right: 8px
 .mail-link
-   color: #919191
+   color: $gray
+   &:hover
+      color: $black

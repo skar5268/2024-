@@ -1,22 +1,23 @@
 @import "./mixin"
+@import "./variable"
 
-.banner
+.banner-works
   max-width: 1920px
   margin: 0 auto
   background-color: #FAFAFA
 
-.container
-  max-width: 670px
-  margin: 0 auto
-  padding-top: 80px
-  padding-bottom: 80px
+  .container
+    max-width: 670px
+    margin: 0 auto
+    padding: 80px 0
 
-  @include pad
-    max-width: 300px
+    @include pad
+      max-width: 300px
 
 .slogan
   h2
     font-size: 24px
+    font-weight: bold
     line-height: 28.8px
     color: #1E1E1E
     text-align: center
@@ -24,32 +25,33 @@
     @include pad
       margin-bottom: 40px
 
-    h2
-      font-size: 20px
-      line-height: 30px
+      h2
+        font-size: 20px
+        line-height: 30px
 
-.first-slogan
-  margin-bottom: 16px
+  .first-slogan
+    margin-bottom: 16px
 
-.focus
-  background: no-repeat url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true)
-  background-position: bottom
-  background-size: contain
+  .focus
+    background: no-repeat url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true)
+    background-position: bottom
+    background-size: contain
 
-.material-icons
-  display: block
-  font-size: 72px
-  color: #E9E9E9
+  .material-icons
+    display: block
+    font-size: 72px
+    color: #E9E9E9
 
-.quote-left  
-  @include pad
-    margin: 0 auto
+  .quote-left
+    @include pad
+      margin: 0 auto
 
-.quote-right
-  margin-left: auto
-  @include pad
-    display: none
+  .quote-right
+    margin-left: auto
+    @include pad
+      display: none
 
+// banner 經驗列表
 .experiences
   width: 100%
   display: flex
@@ -81,9 +83,8 @@
       transform: translateX(-50%)
       background: #C1C1C1
 
+// 作品列表
 .cards
-  max-width: 1296px
-  margin: 0 auto
   display: flex
   justify-content: space-between
   flex-wrap: wrap
@@ -99,6 +100,13 @@
   margin-bottom: 80px
   line-height: 1.2
   width: calc(50% - 12px)
+  border-radius: 8px
+  padding-bottom: 16px
+  transition: all .5s
+
+  &:hover
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
+    cursor: pointer
 
   @include desktop
     width: 80%
@@ -137,20 +145,142 @@
     color: #3b3b3b
     margin-right: 16px
 
+// 頁碼
 .pages
   display: flex
   justify-content: center
   margin-bottom: 120px
 
   li:first-child
-    background: #1E1E1E
-    border-radius: 4px
     margin: 0 8px
     a
       color: #FFFFFF
+      background: #1E1E1E
 
-  a
+      
+
+  a 
+    border-radius: 4px
     padding: 2px 13px
     font-size: 24px
     line-height: 36px
     color: #3B3B3B
+    transition: all .5s
+
+    &:hover
+      background-color: $primary
+      color: #FFFFFF
+
+// modal
+.modal-wrap
+  display: grid
+  place-items: center
+  position: fixed
+  height: 100vh
+  width: 100%
+  top: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0.6)
+  transition: all .5s
+
+.modal-wrap.d-none
+  display: none
+
+.modal
+  max-width: 1076px
+  margin: 0 12px
+  border-radius: 8px
+  background-color: $white
+  text-align: center
+  overflow-y: auto
+  overscroll-behavior: contain
+  height: 90vh
+
+  overflow: -moz-hidden-unscrollable
+  &::-webkit-scrollbar
+    display: none
+
+  .material-icons
+    background-color: $white
+    border: none
+    cursor: pointer
+    display: block
+    text-align: right
+    font-size: 32px
+    margin-left: auto
+    margin-right: 40px
+    margin-top: 32px
+    margin-bottom: 40px
+
+    &:hover
+      opacity: 0.5
+
+  h3
+    font-size: 28px
+    line-height: 33.6px
+    color: $primary
+    font-weight: bold
+    margin-bottom: 8px
+
+  .subtitle
+    line-height: 24px
+    color: $gray
+    margin-bottom: 40px
+
+  .d-flex
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    line-height: 24px
+    text-align: left
+    margin: 0 56px
+    margin-bottom: 40px
+
+    p
+      width: 55%
+
+      @include pad
+        width: 90%
+        margin-bottom: 24px
+
+    ul
+      width: 40%
+      color: $secondary
+      padding-left: 24px
+      border-left: 1px solid $light
+
+      @include pad
+        width: 90%
+        padding-left: 0
+        padding-top: 24px
+        border: none
+        border-top: 1px solid $light
+        text-align: center
+
+      li:first-child
+        margin-bottom: 8px
+
+.modal-container
+  max-width: 720px
+  margin: 0 auto
+  background-color: #FAFAFA
+  padding: 80px 0
+
+  @include pad
+    padding: 40px 0
+
+  img
+    padding: 0 16px 24px 16px
+
+  h4
+    font-weight: bold
+    font-size: 24px
+    line-height: 28.8px
+    color: #1E1E1E
+    margin-bottom: 16px
+
+  p
+    line-height: 24px
+    color: $secondary
+    margin-bottom: 56px
