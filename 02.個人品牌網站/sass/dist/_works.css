@@ -34,11 +34,6 @@
 .slogan .first-slogan {
   margin-bottom: 16px;
 }
-.slogan .focus {
-  background: no-repeat url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
-  background-position: bottom;
-  background-size: contain;
-}
 .slogan .material-icons {
   display: block;
   font-size: 72px;
@@ -89,6 +84,10 @@
   left: 50%;
   transform: translateX(-50%);
   background: #C1C1C1;
+}
+
+.cards.container {
+  padding-bottom: 0;
 }
 
 .cards {

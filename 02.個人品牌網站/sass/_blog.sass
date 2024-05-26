@@ -2,8 +2,6 @@
 @import "./variable"
 
 .blog-banner
-  padding-top: 120px
-  padding-bottom: 80px
 
   @include desktop
     padding-top: 40px
@@ -12,15 +10,18 @@
   h2
     margin-bottom: 24px
 
+    @include desktop
+      padding-top: 0
+
   .sub-title
-  text-align: center
-  line-height: 24px
-  color: $gray
+    text-align: center
+    line-height: 24px
+    color: $gray
+    margin-bottom: 0
 
 .blog-container
   display: flex
   justify-content: space-between
-  padding-bottom: 120px
 
   @include desktop
     flex-direction: column-reverse
@@ -45,7 +46,6 @@
       margin-bottom: 40px
 
   img
-    // max-width: 306px
     width: 100%
     border-radius: 8px
     border: 1px solid $light-white

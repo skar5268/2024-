@@ -1,6 +1,5 @@
 .banner-homepage {
   background: right/contain no-repeat url(../img/banner.png);
-  margin-bottom: 120px;
   padding: 248px 0;
 }
 @media (max-width: 992px) {
@@ -265,7 +264,6 @@
 
 .service {
   background-image: url(../img/homepage-services-bg.png);
-  padding: 120px 0;
 }
 
 .service-items {
@@ -284,6 +282,7 @@
 @media (max-width: 375px) {
   .service-items {
     justify-content: center;
+    gap: 0;
   }
 }
 .service-items li {
@@ -365,9 +364,6 @@
 }
 
 .carousel {
-  max-width: 1296px;
-  margin: 0 auto;
-  padding: 120px 0;
   overflow: hidden;
 }
 

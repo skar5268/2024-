@@ -9,15 +9,15 @@ body
   line-height: 1.5
 
 h1
-   position: absolute
-   top: 0
-   left: 0
-   transform: translateY(-5px)
+  position: absolute
+  top: 0
+  left: 0
+  transform: translateY(-5px)
 
-   @include desktop
-      position: relative
-      left: 0
-      transform: translateY(0%)
+  @include desktop
+    position: relative
+    left: 0
+    transform: translateY(0%)
 
 .logo
   background-image: url(../img/logo.svg)
@@ -33,16 +33,17 @@ h1
   max-width: 1296px
   margin: 0 auto
   position: relative
+  padding-bottom: 120px
 
   @include lgscreen
-    padding: 0 12px
-  // padding: 0 12px
-  // padding: 120px 0
+    padding-left: 12px
+    padding-right: 12px
 
 .container-title
   color: $primary
   text-align: center
   font-weight: bold
+  padding-top: 120px
   margin-bottom: 80px
   font-size: 32px
   line-height: 38.4px
@@ -84,3 +85,8 @@ h1
 .d-sm-none
   @include smscreen
     display: none
+
+.focus
+  background: no-repeat url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true)
+  background-position: bottom
+  background-size: contain
