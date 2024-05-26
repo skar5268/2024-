@@ -1,37 +1,20 @@
-.wrap {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.header {
-  padding: 28px;
-  position: relative;
+header {
+  padding: 28px 0;
   border-bottom: 1px solid #F1F1F1;
 }
+header > .container {
+  padding: 0;
+}
 @media (max-width: 992px) {
-  .header {
+  header > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 @media (max-width: 767px) {
-  .header {
+  header > .container {
     padding: 12px;
-  }
-}
-
-h1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(50%);
-}
-@media (max-width: 992px) {
-  h1 {
-    position: relative;
-    left: 0;
-    transform: translateY(0%);
   }
 }
 
@@ -52,6 +35,15 @@ h1 {
   }
   .menu.d-block {
     display: block;
+    z-index: 2;
+  }
+  .menu.d-block::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
   }
 }
 .menu li {
@@ -68,12 +60,10 @@ h1 {
 
 .menu-link {
   padding: 4px 8px;
-  line-height: 24px;
   color: #000000;
 }
 .menu-link span {
   padding: 4px 8px;
-  line-height: 24px;
   color: #000000;
 }
 .menu-link.active span, .menu-link:hover span {
@@ -120,36 +110,37 @@ h1 {
   }
 }
 
-.footer {
-  background-image: url(./img/footer-bg-lg.png);
+footer {
+  background-image: url(../img/footer-bg-lg.png);
   background-size: cover;
 }
-.footer .container {
+footer .container {
   padding: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 767px) {
-  .footer .container {
+  footer .container {
     padding: 80px 0;
     flex-direction: column;
   }
-  .footer .container .logo {
+  footer .container .logo {
     margin: 0 auto;
   }
-  .footer .container .about > a {
+  footer .container .about > a {
     text-align: center;
     margin-bottom: 40px;
   }
 }
-.footer .container .about a {
+footer .container .about a {
   margin-bottom: 24px;
   line-height: 24px;
 }
-.footer .container .about p {
+footer .container .about p {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
+  font-weight: 400;
   margin-bottom: 24px;
 }
 
@@ -158,9 +149,11 @@ h1 {
   color: #FFFFFF;
 }
 .link-list a {
+  width: 306px;
   font-size: 20px;
-  line-height: 30px;
-  padding: 8px 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 7px 20px;
   border: 1px solid #C1C1C1;
   color: #3B3B3B;
   border-radius: 8px;

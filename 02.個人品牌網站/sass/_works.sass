@@ -16,9 +16,7 @@
 
 .slogan
   h2
-    font-size: 24px
-    font-weight: bold
-    line-height: 28.8px
+    +font(24px, 1.2)
     color: #1E1E1E
     text-align: center
 
@@ -26,8 +24,7 @@
       margin-bottom: 40px
 
       h2
-        font-size: 20px
-        line-height: 30px
+        +font(20px)
 
   .first-slogan
     margin-bottom: 16px
@@ -57,7 +54,6 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  line-height: 24px
   text-align: center
 
   li
@@ -119,15 +115,14 @@
 
   img
     height: 400px
-    margin: 0 auto 16px auto
+    // margin: 0 auto 16px auto
     border-radius: 8px
 
   &-bottom
-    padding: 0 16px
+    padding: 16px 16px 0
 
   h2
-    font-size: 28px
-    font-weight: bold
+    +font(28px, 1.2, 700)
     margin-bottom: 8px
     color: #3b3b3b
 
@@ -163,7 +158,6 @@
     border-radius: 4px
     padding: 2px 13px
     font-size: 24px
-    line-height: 36px
     color: #3B3B3B
     transition: all .5s
 
@@ -216,14 +210,11 @@
       opacity: 0.5
 
   h3
-    font-size: 28px
-    line-height: 33.6px
+    +font(28px, 1.2, 700)
     color: $primary
-    font-weight: bold
     margin-bottom: 8px
 
   .subtitle
-    line-height: 24px
     color: $gray
     margin-bottom: 40px
 
@@ -232,10 +223,12 @@
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
-    line-height: 24px
     text-align: left
     margin: 0 56px
     margin-bottom: 40px
+
+    @include pad
+      justify-content: center
 
     p
       width: 55%
@@ -262,7 +255,7 @@
         margin-bottom: 8px
 
 .modal-container
-  max-width: 720px
+  width: 100%
   margin: 0 auto
   background-color: #FAFAFA
   padding: 80px 0
@@ -272,15 +265,13 @@
 
   img
     padding: 0 16px 24px 16px
+    margin: 0 auto
 
   h4
-    font-weight: bold
-    font-size: 24px
-    line-height: 28.8px
+    +font(24px, 1.2, 700)
     color: #1E1E1E
     margin-bottom: 16px
 
   p
-    line-height: 24px
     color: $secondary
     margin-bottom: 56px

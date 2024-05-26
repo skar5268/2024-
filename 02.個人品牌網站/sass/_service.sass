@@ -39,10 +39,10 @@
       position: absolute
       bottom: 0
       left: 0
-      transform: translate(1000%, 150%)
+      transform: translate(1000%, 120%)
 
       @include pad
-        transform: translate(500%, 150%)
+        transform: translate(500%, 120%)
 
     &:last-child
       &::after
@@ -50,15 +50,12 @@
 
   .order-num
     font-family: "Tourney", sans-serif
-    font-size: 72px
-    line-height: 86.4px
+    +font(72px,1.2)
     color: $gray
     margin: 0 32px
   h3
     color: $white
-    font-size: 28px
-    line-height: 33.6px
-    font-weight: bold
+    +font(28px, 1.2, 700)
     margin-bottom: 8px
 
     @include pad
@@ -66,7 +63,6 @@
   p
     color: #E9E9E9
     font-size: 20px
-    line-height: 30px
 
 
 .price-container
@@ -74,8 +70,7 @@
 
 .price-list
   display: flex
-  flex-wrap: wrap
-  justify-content: space-between
+  gap: 10px
   align-items: center
 
   @include desktop
@@ -102,9 +97,7 @@
 
     h3
       color: $secondary
-      font-weight: bold
-      font-size: 28px
-      line-height: 42px
+      +font(28px, 1.5, 600)
       margin-right: 73px
       position: relative
       @include pad
@@ -123,16 +116,13 @@
           width: 28px
     p
       color: #1E1E1E
-      font-weight: bold
-      font-size: 32px
-      line-height: 48px
+      +font(32px, 1.5, 700)
       @include pad
         font-size: 20px
-        line-height: 30px
+
 
     span
-      font-size: 16px
-      line-height: 24px
+      +font(16px)
       color: $secondary
       margin-left: 8px
 
@@ -160,20 +150,17 @@
     width: 48%
     border: 1px solid #E9E9E9
     border-radius: 8px
-    padding: 24px
+    padding: 24px 37px 12px 24px
     margin-bottom: 24px
 
     @include pad
       width: 80%
 
     h3
-      font-weight: bold
+      +font(24px, 1.2, 700)
       color: $primary
-      font-size: 24px
-      line-height: 28.8px
       margin-bottom: 16px
     p
-      font-size: 20px
-      line-height: 30px
+      +font(20px)
       color: $secondary
 

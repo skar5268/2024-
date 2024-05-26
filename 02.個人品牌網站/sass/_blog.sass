@@ -4,12 +4,14 @@
 .blog-banner
   padding-top: 120px
   padding-bottom: 80px
+
   @include desktop
     padding-top: 40px
     padding-bottom: 40px
 
   h2
     margin-bottom: 24px
+
   .sub-title
   text-align: center
   line-height: 24px
@@ -17,7 +19,7 @@
 
 .blog-container
   display: flex
-  justify-content: space-evenly
+  justify-content: space-between
   padding-bottom: 120px
 
   @include desktop
@@ -34,29 +36,33 @@
     display: flex
     margin-bottom: 64px
 
+    &:last-child
+      margin-bottom: 0
+
     @include pad
       flex-direction: column
       margin: 0 34px
       margin-bottom: 40px
 
   img
-    max-width: 306px
+    // max-width: 306px
+    width: 100%
     border-radius: 8px
     border: 1px solid $light-white
     margin-right: 16px
+
     @include pad
       margin: 0 auto
       margin-bottom: 16px
 
   .details
     margin-bottom: 16px
+
     @include pad
       text-align: center
 
   .date
-    line-height: 24px
     color: $secondary
-    font-weight: bold
     margin-right: 16px
 
   .tag
@@ -66,9 +72,7 @@
     color: $primary
 
   h3>a
-    font-size: 20px
-    line-height: 24px
-    font-weight: bold
+    +font(20px, 1.2, 600)
     color: $primary
     margin-bottom: 16px
 
@@ -76,8 +80,14 @@
       color: $secondary
 
   p
-    line-height: 24px
     color: $primary
+
+    @include pad
+      text-overflow: ellipsis
+      overflow: hidden
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      -webkit-line-clamp: 3
 
 .article-types
   width: 25%
@@ -97,9 +107,6 @@
 
   .active
     display: inline-block
-    font-weight: bold
-    font-size: 20px
-    line-height: 30px
     color: #1E1E1E
     border-bottom: 2px solid #1E1E1E
     padding-bottom: 4px
@@ -119,7 +126,6 @@
   li>a
     display: inline-block
     font-size: 20px
-    line-height: 30px
     color: $secondary
     margin-bottom: 32px
     padding-bottom: 4px

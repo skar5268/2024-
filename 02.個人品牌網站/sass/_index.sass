@@ -2,7 +2,7 @@
 @import "./_mixin"
 
 .banner-homepage
-  background: right / contain no-repeat url(./img/banner.png)
+  background: right / contain no-repeat url(../img/banner.png)
   margin-bottom: 120px
   padding: 248px 0
 
@@ -11,14 +11,10 @@
     background-image: none
 
   .intro
-    max-width: 1296px
-    margin: 0 auto
 
     h2
-      font-size: 40px
-      line-height: 48px
+      +font(40px,1.2,600)
       color: $primary
-      font-weight: bold
       margin-bottom: 24px
 
     @include lgscreen
@@ -33,13 +29,11 @@
 
   p
     color: $secondary
-    font-size: 20px
-    line-height: 30px
+    +font(20px)
     margin-bottom: 16px
 
   .job-text
-    font-size: 16px
-    line-height: 24px
+    +font(16px)
     color: $light
     margin-bottom: 60px
 
@@ -67,7 +61,7 @@
     z-index: 0
 
   &>li:first-child
-    background-image: url(./img/homepage-work1-bg.png)
+    background-image: url(../img/homepage-work1-bg.png)
 
     @include lgscreen
       flex-wrap: wrap
@@ -97,7 +91,7 @@
       display: none
 
   &>li:nth-child(2)
-    background-image: url(./img/homepage-work2-bg.png)
+    background-image: url(../img/homepage-work2-bg.png)
 
     @include lgscreen
       flex-wrap: wrap
@@ -130,7 +124,7 @@
     @include desktop
       display: none
   &>li:nth-child(3)
-    background-image: url(./img/homepage-work3-bg.png)
+    background-image: url(../img/homepage-work3-bg.png)
 
     @include lgscreen
       flex-wrap: wrap
@@ -163,18 +157,15 @@
     margin: 0
     text-align: center
     padding: 24px 0
-    
+
   h3
-    font-size: 28px
-    line-height: 34px
-    font-weight: bold
+    +font(28px, 1.2, 700)
     margin-bottom: 8px
 
     @include desktop
       color: #1e1e1e
 
   p
-    line-height: 24px
     margin-bottom: 24px
     @include desktop
       color: $secondary
@@ -193,14 +184,13 @@
     width: 176px
     margin: 0 auto
     color: $white
-    font-size: 20px
-    line-height: 30px
+    +font(20px,1.5,700)
     background-color: $black
     padding: 16px 32px
     border-radius: 5px
     display: flex
     justify-content: center
-    
+
     transition: all .5s
 
     &:hover
@@ -210,17 +200,16 @@
         color: $black
 
     span
-      font-size: 20px
-      line-height: 30px
+      +font(20px,1.5,700)
 
 // 服務項目
-.service-container
-  background-image: url(./img/homepage-services-bg.png)
+.service
+  background-image: url(../img/homepage-services-bg.png)
   padding: 120px 0
 
 .service-items
   display: flex
-  justify-content: space-between
+  gap: 24px
   flex-wrap: wrap
   max-width: 1296px
   margin: 0 auto
@@ -234,14 +223,18 @@
 
   li
     text-align: center
-    background-image: url(./img/service-item-bg.png)
+    background-image: url(../img/service-item-bg.png)
     background-repeat: no-repeat
     background-size: cover
-    padding: 80px 97px
+    width: 306px
+    height: 306px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
     border-radius: 16px
     color: $white
-    font-size: 28px
-    line-height: 42px
+    +font(28px)
     margin-bottom: 24px
 
     img
@@ -257,11 +250,8 @@
       width: 90%
 
   h3
-    font-size: 28px
-    line-height: 36px
+    +font(28px,1.5,700)
     text-align: center
-    font-weight: bold
-    margin-bottom: 40px
 
 .btn
   padding: 16px 32px
@@ -270,8 +260,7 @@
   width: 276px
   margin: 0 auto
   border-radius: 8px
-  font-size: 20px
-  line-height: 32px
+  +font(20px,32px,600)
   display: flex
   justify-content: center
   transition: all .5s
@@ -284,26 +273,24 @@
 
     span
       color: $black
-    
+
   span
     font-size: 20px
     line-height: 32px
 
 .more
-  font-size: 28px
-  line-height: 33.6px
+  +font(28px,1.2,600)
   color: $primary
-  font-weight: bold
   text-align: center
   margin-bottom: 40px
-  
+
 // 文章輪播
 .carousel
   max-width: 1296px
   margin: 0 auto
   padding: 120px 0
   overflow: hidden
-  
+
 .carousel-cards
   display: flex
 
@@ -312,17 +299,17 @@
     margin: 0 12px
 
   .carousel-card
-    flex:0 0 30%
+    flex: 0 0 30%
     margin-right: 5%
     transform: translateX(0)
     transition: transform 1s
 
     @include pad
-      flex:0 0 48%
+      flex: 0 0 48%
       margin: 1%
 
     @include smscreen
-      flex:0 0 98%
+      flex: 0 0 98%
 
   a
     color: $primary
@@ -334,10 +321,8 @@
 
   h3
     padding: 0 8px
-    font-size: 20px
-    line-height: 24px
-    margin-bottom: 16px
-    font-weight: bold
+    +font(20px,1.2,700 )
+    margin-bottom: 16px 
 
   .content
     padding: 0 8px
@@ -368,7 +353,7 @@
     height: 10px
     background-color: #E9E9E9
     border-radius: 50%
-    
+
     &:hover
       cursor: pointer
 
@@ -377,4 +362,3 @@
 
   @include smscreen
     display: flex
-  

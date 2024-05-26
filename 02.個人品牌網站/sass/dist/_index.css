@@ -1,5 +1,5 @@
 .banner-homepage {
-  background: right/contain no-repeat url(./img/banner.png);
+  background: right/contain no-repeat url(../img/banner.png);
   margin-bottom: 120px;
   padding: 248px 0;
 }
@@ -9,15 +9,11 @@
     background-image: none;
   }
 }
-.banner-homepage .intro {
-  max-width: 1296px;
-  margin: 0 auto;
-}
 .banner-homepage .intro h2 {
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
+  font-weight: 600;
   color: #3B3B3B;
-  font-weight: bold;
   margin-bottom: 24px;
 }
 @media (max-width: 1280px) {
@@ -37,12 +33,14 @@
 .banner-homepage p {
   color: #5B5B5B;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
+  font-weight: 400;
   margin-bottom: 16px;
 }
 .banner-homepage .job-text {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
+  font-weight: 400;
   color: #C1C1C1;
   margin-bottom: 60px;
 }
@@ -73,7 +71,7 @@
   z-index: 0;
 }
 .works > li:first-child {
-  background-image: url(./img/homepage-work1-bg.png);
+  background-image: url(../img/homepage-work1-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:first-child {
@@ -112,7 +110,7 @@
   }
 }
 .works > li:nth-child(2) {
-  background-image: url(./img/homepage-work2-bg.png);
+  background-image: url(../img/homepage-work2-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:nth-child(2) {
@@ -159,7 +157,7 @@
   }
 }
 .works > li:nth-child(3) {
-  background-image: url(./img/homepage-work3-bg.png);
+  background-image: url(../img/homepage-work3-bg.png);
 }
 @media (max-width: 1280px) {
   .works > li:nth-child(3) {
@@ -208,8 +206,8 @@
 }
 .work-intro h3 {
   font-size: 28px;
-  line-height: 34px;
-  font-weight: bold;
+  line-height: 1.2;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 @media (max-width: 992px) {
@@ -218,7 +216,6 @@
   }
 }
 .work-intro p {
-  line-height: 24px;
   margin-bottom: 24px;
 }
 @media (max-width: 992px) {
@@ -244,7 +241,8 @@
   margin: 0 auto;
   color: #FFFFFF;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
+  font-weight: 700;
   background-color: #000000;
   padding: 16px 32px;
   border-radius: 5px;
@@ -261,17 +259,18 @@
 }
 .work-intro .intro-btn span {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
+  font-weight: 700;
 }
 
-.service-container {
-  background-image: url(./img/homepage-services-bg.png);
+.service {
+  background-image: url(../img/homepage-services-bg.png);
   padding: 120px 0;
 }
 
 .service-items {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
   flex-wrap: wrap;
   max-width: 1296px;
   margin: 0 auto;
@@ -289,14 +288,20 @@
 }
 .service-items li {
   text-align: center;
-  background-image: url(./img/service-item-bg.png);
+  background-image: url(../img/service-item-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 80px 97px;
+  width: 306px;
+  height: 306px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px;
   color: #FFFFFF;
   font-size: 28px;
-  line-height: 42px;
+  line-height: 1.5;
+  font-weight: 400;
   margin-bottom: 24px;
 }
 .service-items li img {
@@ -317,10 +322,9 @@
 }
 .service-items h3 {
   font-size: 28px;
-  line-height: 36px;
+  line-height: 1.5;
+  font-weight: 700;
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 40px;
 }
 
 .btn {
@@ -332,6 +336,7 @@
   border-radius: 8px;
   font-size: 20px;
   line-height: 32px;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   transition: all 0.5s;
@@ -352,9 +357,9 @@
 
 .more {
   font-size: 28px;
-  line-height: 33.6px;
+  line-height: 1.2;
+  font-weight: 600;
   color: #3B3B3B;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -403,9 +408,9 @@
 .carousel-cards h3 {
   padding: 0 8px;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
+  font-weight: 700;
   margin-bottom: 16px;
-  font-weight: bold;
 }
 .carousel-cards .content {
   padding: 0 8px;

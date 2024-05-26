@@ -5,10 +5,10 @@ html(lang="zh-TW")
       meta(name="viewport" content="width=device-width, initial-scale=1.0")
       title Noel 個人網站
       link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-      link(rel="stylesheet" href="../../all.css")
+      link(rel="stylesheet" href="../../sass/all.css")
    body 
-      .wrap
-         .header.container
+      header
+         .container
             h1
                a.logo(href="../index.html") Noel 
             .mobile-menu.material-icons menu
@@ -28,105 +28,105 @@ html(lang="zh-TW")
                li
                   a.menu-link(href="#") 
                      span 聯絡我
-         .banner-works
-            .container
-               .slogan
-                  img.quote-left(src="../../img/quote-left.png" alt="")
-                  h2.first-slogan 讓使用者在觀賞與使用的旅程中，發現
-                     span.focus 設計的價值
-                  h2 而我在設計與開發的過程中，看見
-                     span.focus 自己的價值
-                  img.quote-right(src="../../img/quote-right.png" alt="")
-               ul.experiences
-                  li
-                     h3.title 2B經驗
-                     p 內部監控系統、庫存系統、採購系統、行銷整合系統
-                  li
-                     h3.title 2C經驗
-                     p 跨國美妝保養電商、個人品牌網站、醫美網站、電子商務
-         ul.cards.container
-            li.card(data-open-modal)
-               img(src="../../img/01-星際旅行訂票平台.png" alt="星際旅行訂票平台")
-               .card-bottom
-                  h2 星際旅行訂票平台
-                  h3 悠遊宇宙的夢想，從這裡開始實現
-                  ul.tags
-                     li 網頁設計
-                     li 響應式設計
-                     li Bootstrap
-            li.card
-               img(src="../../img/02-理財App.png" alt="理財App")
-               .card-bottom
-                  h2 理財App
-                  h3 連動帳戶與行動支付，讓 AI 提供您最好的理財建議
-                  ul.tags
-                     li APP設計
-                     li iOS
-                     li React
-            li.card
-               img(src="../../img/03-醫美診所官網.png" alt="醫美診所官網")
-               .card-bottom
-                  h2 醫美診所官網
-                  h3 永保青春的秘密，從粹究開始
-                  ul.tags
-                     li 網頁設計
-                     li 響應式設計
-                     li ＷordPress
-            li.card
-               img(src="../../img/04-美美美早餐店 POS 機 UI Design.png" alt="美美美早餐店 POS 機 UI Design")
-               .card-bottom
-                  h2 美美美早餐店 POS 機 UI Design
-                  h3 訂單送單一目瞭然，自動報表分析好輕鬆
-                  ul.tags
-                     li UI 設計
-                     li 前端開發
-                     li Wix
-            li.card
-               img(src="../../img/05-電影院訂票系統.png" alt="電影院訂票系統")
-               .card-bottom
-                  h2 電影院訂票系統
-                  h3 三步驟完成訂票，電腦手機都支援
-                  ul.tags
-                     li 前端開發
-                     li 後端支援
-                     li Vue
-            li.card
-               img(src="../../img/06-巧克巧克形象官網設計.png" alt="巧克巧克形象官網設計")
-               .card-bottom
-                  h2 巧克巧克形象官網設計
-                  h3 三步驟完成訂票，電腦手機都支援
-                  ul.tags
-                     li UI設計
-                     li 設計系統
-                     li 網路電商
-         ul.pages
-            li
-               a(href="#") 1
-            li
-               a(href="#") 2
-            li
-               a(href="#") 3
-         .footer
-            .container
-               .about 
-                  a.logo(href="./index.html")
-                  p 若有數位產品設計和開發相關問題
-                     br
-                     | 歡迎填寫表單，或直接與我聯絡！ 
-                  a.mail-link(href="mailto:service@hexschool.com") service@hexschool.com 
-               ul.link-list 
-                  li
-                     a(href="") 
-                        img(src="../../img/list.svg" alt="表單")
-                        |填寫表單
-                  li
-                     a(href="") 
-                        img(src="../../img/instagram.png" alt="IG")
-                        |hexschool_demo
-                  li
-                     a(href="") 
-                        img(src="../../img/facebook.png" alt="FB")
-                        |hexschoolTW
+      .banner-works
+         .container
+            .slogan
+               img.quote-left(src="../../img/quote-left.png" alt="")
+               h2.first-slogan 讓使用者在觀賞與使用的旅程中，發現
+                  span.focus 設計的價值
+               h2 而我在設計與開發的過程中，看見
+                  span.focus 自己的價值
+               img.quote-right(src="../../img/quote-right.png" alt="")
+            ul.experiences
+               li
+                  h3.title 2B經驗
+                  p 內部監控系統、庫存系統、採購系統、行銷整合系統
+               li
+                  h3.title 2C經驗
+                  p 跨國美妝保養電商、個人品牌網站、醫美網站、電子商務
+      ul.cards.container
+         li.card(data-open-modal)
+            img(src="../../img/01-星際旅行訂票平台.png" alt="星際旅行訂票平台")
+            .card-bottom
+               h2 星際旅行訂票平台
+               h3 悠遊宇宙的夢想，從這裡開始實現
+               ul.tags
+                  li 網頁設計
+                  li 響應式設計
+                  li Bootstrap
+         li.card
+            img(src="../../img/02-理財App.png" alt="理財App")
+            .card-bottom
+               h2 理財App
+               h3 連動帳戶與行動支付，讓 AI 提供您最好的理財建議
+               ul.tags
+                  li APP設計
+                  li iOS
+                  li React
+         li.card
+            img(src="../../img/03-醫美診所官網.png" alt="醫美診所官網")
+            .card-bottom
+               h2 醫美診所官網
+               h3 永保青春的秘密，從粹究開始
+               ul.tags
+                  li 網頁設計
+                  li 響應式設計
+                  li ＷordPress
+         li.card
+            img(src="../../img/04-美美美早餐店 POS 機 UI Design.png" alt="美美美早餐店 POS 機 UI Design")
+            .card-bottom
+               h2 美美美早餐店 POS 機 UI Design
+               h3 訂單送單一目瞭然，自動報表分析好輕鬆
+               ul.tags
+                  li UI 設計
+                  li 前端開發
+                  li Wix
+         li.card
+            img(src="../../img/05-電影院訂票系統.png" alt="電影院訂票系統")
+            .card-bottom
+               h2 電影院訂票系統
+               h3 三步驟完成訂票，電腦手機都支援
+               ul.tags
+                  li 前端開發
+                  li 後端支援
+                  li Vue
+         li.card
+            img(src="../../img/06-巧克巧克形象官網設計.png" alt="巧克巧克形象官網設計")
+            .card-bottom
+               h2 巧克巧克形象官網設計
+               h3 三步驟完成訂票，電腦手機都支援
+               ul.tags
+                  li UI設計
+                  li 設計系統
+                  li 網路電商
+      ul.pages
+         li
+            a(href="#") 1
+         li
+            a(href="#") 2
+         li
+            a(href="#") 3
+      footer
+         .container
+            .about 
+               a.logo(href="./index.html")
+               p 若有數位產品設計和開發相關問題
+                  br
+                  | 歡迎填寫表單，或直接與我聯絡！ 
+               a.mail-link(href="mailto:service@hexschool.com") service@hexschool.com 
+            ul.link-list 
+               li
+                  a(href="") 
+                     img(src="../../img/list.svg" alt="表單")
+                     |填寫表單
+               li
+                  a(href="") 
+                     img(src="../../img/instagram.png" alt="IG")
+                     |hexschool_demo
+               li
+                  a(href="") 
+                     img(src="../../img/facebook.png" alt="FB")
+                     |hexschoolTW
       .modal-wrap.d-none(data-modal-new)
          .modal
             button.material-icons(data-close-modal) close
