@@ -1,17 +1,24 @@
-@import "./mixin"
-@import "./variable"
-
 .blog-container.article
-  padding: 120px 0 80px
+  padding: 120px 12px 80px
   color: $primary
   border-bottom: 1px solid $light
 
   @include desktop
-    padding-top: 0
+    padding: 0 0 80px
 
   .details
     color: $gray
     margin-bottom: 40px
+
+    @include desktop
+      display: flex
+      justify-content: space-between
+
+    .tag::after
+      content: ' / '
+
+      @include desktop
+        display: none
 
   p
     font-size: 20px
@@ -59,14 +66,25 @@
     color: $secondary
 
 .related-container
-  padding: 80px 0
+  padding: 80px 12px
 
   .carousel-cards
     gap: 16px
+    flex-wrap: wrap
+    padding: 0 12px
+
+    @include pad
+      justify-content: center
   
   .carousel-card
     width: calc( 33.3% - 12px )
     margin: 0
+
+    @include pad
+      flex: 0 0 100%
+
+    img
+      width: 100%
 
 .related-title
   +font(28px, 1.2, 700)

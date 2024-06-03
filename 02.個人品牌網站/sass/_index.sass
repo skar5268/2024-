@@ -1,15 +1,17 @@
-@import "./_variable"
-@import "./_mixin"
-
 .banner-homepage
-  background: right / contain no-repeat url(../img/banner.png)
-  padding: 248px 0
+  display: flex
+  background: right top / 1154px 792px no-repeat url(../img/banner.png)
 
+  @include lgscreen
+    background-image: none
+    flex-wrap: wrap
+    flex-direction: row-reverse
+      
   @include desktop
     padding: 0
-    background-image: none
 
   .intro
+    margin: 248px 0 248px 312px
 
     h2
       +font(40px,1.2,600)
@@ -17,14 +19,13 @@
       margin-bottom: 24px
 
     @include lgscreen
-      width: 70%
-      margin: 0
-      margin-left: 10%
+      margin: 0 auto
+      margin-top: 124px
 
     @include desktop
       width: 90%
       text-align: center
-      margin: 0 auto
+      margin-top: 0
 
   p
     color: $secondary
@@ -205,15 +206,19 @@
 .service
   background-image: url(../img/homepage-services-bg.png)
 
+  @include pad
+    background-image: none
+    background-color: #FAFAFA
+
 .service-items
   display: flex
   gap: 24px
-  flex-wrap: wrap
   max-width: 1296px
   margin: 0 auto
   margin-bottom: 56px
 
   @include desktop
+    flex-wrap: wrap
     justify-content: space-evenly
 
   @include smscreen
@@ -236,17 +241,13 @@
     +font(28px)
     margin-bottom: 24px
 
-    img
-      margin: 0 auto
-      margin-bottom: 24px
-
     @include desktop
       padding-left: 0
       padding-right: 0
-      width: 48%
 
-    @include smscreen
-      width: 90%
+    img
+      margin: 0 auto
+      margin-bottom: 24px
 
   h3
     +font(28px,1.5,700)

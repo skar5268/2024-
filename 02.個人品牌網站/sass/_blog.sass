@@ -1,6 +1,3 @@
-@import "./mixin"
-@import "./variable"
-
 .blog-banner
 
   @include desktop
@@ -25,12 +22,15 @@
 
   @include desktop
     flex-direction: column-reverse
+    padding-left: 0
+    padding-right: 0
 
 .articles
   width: 70%
 
   @include desktop
-    width: 98%
+    width: 100%
+    padding: 0 22.5px
     margin: 0 auto
 
   li
@@ -59,7 +59,8 @@
     margin-bottom: 16px
 
     @include pad
-      text-align: center
+      display: flex
+      justify-content: space-between
 
   .date
     color: $secondary
